@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.2.1_b6473628506f1ac0b554547ca4c49f3c5f9ada16\classes.dex" />
+    </item>
+    <item
+        jar="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b0260ab69b23196100c29dde8eab47e482148afc">
+        <dex dex="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d189c48e53b5f9082e9f7d8caafda25547eaa5f5\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\mukul.xyz\.gradle\caches\modules-2\files-2.1\com.sun.mail\android-activation\1.5.5\5442d5e05808145434b750c9f8a0c3f537383c5a\android-activation-1.5.5.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5442d5e05808145434b750c9f8a0c3f537383c5a">
+        <dex dex="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\android-activation-1.5.5_59d3099f09131c6e610f844f477f4bd9164d75ac\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\mukul.xyz\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-22.2.1_28d66ebdc4099686e2a1e315f89f73577339e4c4\classes.dex" />
+    </item>
+    <item
+        jar="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-22.2.1_227f7268df9e3c49a57d6f5ce3f01e6ab0e4422a\classes.dex" />
+    </item>
+    <item
+        jar="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b1bfcbf2ebeebe82987c9721b59861995dfa5034">
+        <dex dex="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e3733eff8c24f7bfc5a7f78741bfe0259df37310\classes.dex" />
+    </item>
+    <item
+        jar="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-22.2.1_b3904f141812eb5018f3d7cef1941a5e419f0a9d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\mukul.xyz\.gradle\caches\modules-2\files-2.1\com.sun.mail\android-mail\1.5.5\53a2f927b235acb565dbe9314ececfb7e6d43020\android-mail-1.5.5.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="53a2f927b235acb565dbe9314ececfb7e6d43020">
+        <dex dex="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\android-mail-1.5.5_09cb708e0f26061d3bd56fdc050d5929a0c0d906\classes.dex" />
+    </item>
+    <item
+        jar="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_db59e09c6ef04183c401069759851456c538031b\classes.dex" />
+    </item>
+    <item
+        jar="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="E:\android_studio_projects\StatisticsCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.2.1_bef29a49d7876ad867d0dd58cc4b2440b9a88cd9\classes.dex" />
+    </item>
+
+</items>

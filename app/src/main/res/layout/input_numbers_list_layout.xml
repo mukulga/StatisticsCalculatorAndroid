@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/wsText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="
+            " />
+
+        <TextView
+            android:id="@+id/description1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This screen allows you to calculate coefficient of correlation. You can also view least-squares regression equation by enabling a setting. You can input two lists of numbers below with values comma-separated, and can click 'FIND' button to get the result."
+            android:textColor="#0000ff" />
+
+        <TextView
+            android:id="@+id/wsText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="
+            " />
+
+        <TextView
+            android:id="@+id/description2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can also provide input for this calculation, from a text file. Clicking on 'SELECT TEXT FILE' button will open a file browser for this purpose. You can enable/disable the 'SELECT TEXT FILE' button via application settings.\n"
+            android:textColor="#0000ff" />
+
+        <TextView
+            android:id="@+id/description3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="To learn more about providing data input from file, for this calculation and the format in which data is accepted, please see the app Help on Page 2 (navigable from menu item 'Help').\n"
+            android:textColor="#003300" />
+
+        <TextView
+            android:id="@+id/enterList1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List 1 (e.g 5,8,15 ...)"
+            android:textColor="#eb7600" />
+
+        <EditText
+            android:id="@+id/numList1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="150sp" />
+
+        <TextView
+            android:id="@+id/enterList2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List 2 (e.g 5,8,15 ...)"
+            android:textColor="#eb7600" />
+
+        <EditText
+            android:id="@+id/numList2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="150sp" />
+
+        <TextView
+            android:id="@+id/wsText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="
+            " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/findBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="findCorrelationBtnAction"
+                android:text="Find"
+                android:textAlignment="center"
+                android:textColor="#eb7600" />
+
+            <TextView
+                android:id="@+id/wsText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         " />
+
+            <Button
+                android:id="@+id/resetCorrBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="resetCorrBtnAction"
+                android:text="Reset"
+                android:textAlignment="center"
+                android:textColor="#eb7600" />
+
+            <TextView
+                android:id="@+id/wsText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         " />
+
+            <Button
+                android:id="@+id/fileInpCorrBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="fileInpCorrBtnAction"
+                android:text="Select text\nfile"
+                android:textAlignment="center"
+                android:textColor="#eb7600" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

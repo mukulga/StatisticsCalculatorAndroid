@@ -1,0 +1,83 @@
+options {
+  STATIC = false;
+}
+
+PARSER_BEGIN(NumPairParser)
+
+/** Number pairs file parser. */
+public class NumPairParser {
+
+  /** Main entry point. */
+  public static void main(String args[]) throws ParseException {
+    NumPairParser parser = new NumPairParser(System.in);
+    parser.Input();
+  }
+
+}
+
+PARSER_END(NumPairParser)
+
+SKIP :
+{
+  " "
+| "\t"
+| "\n"
+| "\r"
+}
+
+TOKEN :
+{
+  < NUMBER:  ( ( ["0"-"9"] )* ["."] ( ["0"-"9"] )+ | 
+             ( ["0"-"9"] )+ ["."] ) |
+             ( ["0"-"9"] )+
+  >
+}
+
+/** Root production. */
+java.util.List<NumPair> Input() :
+{
+   java.util.List<NumPair> numPairList;
+}
+{
+   numPairList = NumPairList() <EOF>
+   { return numPairList; }
+}
+
+/** another production. */
+java.util.List<NumPair> NumPairList() :
+{
+   java.util.List<NumPair> numPairList = new java.util.ArrayList<NumPair>();
+   NumPair numPair;
+   String num;
+}
+{
+    (
+   "(" num = Number()
+     {
+        numPair = new NumPair();
+        numPair.num1 = Float.valueOf(num);
+     }
+     "," num = Number()
+     {
+        numPair.num2 = Float.valueOf(num);
+     }
+   ")"
+   {
+      numPairList.add(numPair);
+   }
+   )+
+   
+   { return numPairList; }
+}
+
+/** another production. */
+String Number() :
+{
+   Token t;
+}
+{
+  t=<NUMBER>
+  {
+     return t.image;
+  }
+}

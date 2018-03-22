@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Statistics Basics</title>
+<style type="text/css">
+.auto-style2 {
+	text-align: left;
+}
+.auto-style3 {
+	border-width: 0px;
+}
+.auto-style4 {
+	text-decoration: underline;
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<p class="auto-style2"><u>Hello Stats App, Help Version 3.1</u></p>
+<p class="auto-style4"><strong>Statistics Fundamentals</strong></p>
+<p class="auto-style2">This section describes various statistical mathematical 
+concepts, that are implemented in the "Hello Stats" app. It is intended to give 
+a quick overview of statistics theory, to users who would like to refresh these 
+concepts before making use of this app for any serious use.</p>
+<p class="auto-style2"><strong>(1) Average or Measures of Central Tendency</strong></p>
+<p class="auto-style2"><em>a) Arithmetic Mean</em></p>
+<p class="auto-style2">If x1,x2,x3, ...... xn are n numbers, then their 
+arithmetic mean is defined by:</p>
+<p class="auto-style2">(x1 + x2 + x3 + ..... + xn) / n</p>
+<p class="auto-style2"><em>b) Geometric Mean</em></p>
+<p class="auto-style2">If x1,x2,x3, ...... xn are n numbers, then their 
+geometric mean is defined by:</p>
+<p class="auto-style2">pow ((x1 * x2 * x3 ...... ), 1/n)&nbsp;&nbsp;&nbsp; i.e 
+the result of multiplying all the numbers, and then finding the nth root of it. 
+In this formula, "pow" refers to a power value calculation.</p>
+<p class="auto-style2"><em>c) Harmonic Mean</em></p>
+<p class="auto-style2">If x1,x2,x3, ...... xn are n numbers, then their harmonic 
+mean H is defined by:</p>
+<p class="auto-style2">1/H = (1/n) * (1/x1 + 1/x2 + 1/x3 ...... 1/xn)</p>
+<p class="auto-style2"><em>d) Median</em></p>
+<p class="auto-style2">Let there be n numbers. To find the median of these given 
+set of numbers, the following procedure is followed:</p>
+<p class="auto-style2">- Arrange the numbers in ascending or descending order of 
+magnitude.</p>
+<p class="auto-style2">- When the total number of the items is odd and equal to 
+say n, then the value of (1/2) * (n + 1) th item gives the median.</p>
+<p class="auto-style2">- When the total number of the items is even and equal to 
+say n, then there are two middle items, and the mean of the values of n/2 th and 
+(n/2 + 1) th items is the median.</p>
+<p class="auto-style2"><em>e) Mode</em></p>
+<p class="auto-style2">Mode is that value in sample data which 
+occurs most frequently. It is possible to have more than one such value in the 
+sample.</p>
+<p class="auto-style2"><em>f) Average Deviation</em></p>
+<p class="auto-style2">This is defined as the mean of the absolute values of the 
+deviations of a given set of numbers from their arithmetic mean.</p>
+<p class="auto-style2">Let x1,x2,x3 ..... xn be a set of numbers with 
+frequencies f1,f2,f3 ..... fn respectively. If x is the arithmetic mean of the numbers 
+x1,x2,x3 .... xn&nbsp;&nbsp; then, Average deviation is defined as follows:</p>
+<p class="auto-style2">(f1* |x1 - x| + f2* |x2 - x| + ....... fn* |xn - x|) / 
+(f1 + f2 + ...... fn)</p>
+<p class="auto-style2">It is also correct to think of this calculation, without 
+considering the concept of the "frequency" of occurrence of values. If x1,x2,x3 
+..... xn are 
+a set of numbers (a specific number can occur any number of times in such a set. 
+the total number of occurrences of a number, is actually the frequency of that 
+number) with x as arithmetic mean, then the 
+Average deviation of these set of numbers is defined as follows:</p>
+<p class="auto-style2">(|x1 - x| + |x2 - x| + ...... |xn - x|) / (x1 + x2 + 
+..... + xn)</p>
+<p class="auto-style2"><em>g) Standard Deviation</em></p>
+<p class="auto-style2">The standard deviation of a set of values x1,x2,x3 ..... 
+xn is defined as follows:</p>
+<p class="auto-style2">Let <em>m </em>be the arithmetic mean of these set of 
+numbers. The variance of these numbers is defined as follows:</p>
+<p class="auto-style2">VAR. = (1/n) * [(x1 - m)*(x1 - m) + (x2 - m)*(x2 - m) + 
+....... (xn - m)*(xn - m)]</p>
+<p class="auto-style2">Statistics theorists have different opinions about, that 
+what size of the data list must be considered when using this formula to calculate variance 
+and therefore standard deviation. Popular beliefs are, that in the 
+above formula we can either have 1 / (n - 1) or 1 / n and the rest of formula 
+remains same.</p>
+<p class="auto-style2">The standard deviation (SD) is square root of VAR.&nbsp; 
+i.e&nbsp; SD = sqrt(VAR.)</p>
+<p class="auto-style2"><strong>(2) Skewness</strong></p>
+<p class="auto-style2">Skewness denotes the opposite of symmetry. In a 
+symmetrical series the arithmetic mean, the median and the mode are identical. 
+Skewness is defined by the following formula:</p>
+<p class="auto-style2">(Mean - Mode) / (standard deviation)</p>
+<p class="auto-style2"><strong>(3) Correlation and regression</strong></p>
+<p class="auto-style2">Whenever two variables are related in a way, that an 
+increase in value of the one causes an increase or decrease in the value of 
+other, then the variables are said to be correlated.</p>
+<p>There are various methods in statistics for finding the correlation between 
+two variables. The Hello Stats app implements the Pearson's coefficient of 
+correlation, which is defined as follows:</p>
+<p>Let <em>m1</em> and <em>m2</em> be arithmetic means of two sets of numbers 
+x1,x2,x3 .....&nbsp; and&nbsp; y1,y2,y3 ..... respectively. Then coefficient of 
+correlation is defined as following:</p>
+<p>Let P = (x1 - m1)*(y1 - m2) + (x2 - m1)*(y2 - m2) + ...... + (xn - m1)*(yn - 
+m2)</p>
+<p>F = (x1 - m1)*(x1 - m1) + (x2 - m1)*(x2 - m1) + ...... (xn - m1)*(xn - m1)</p>
+<p>G = (y1 - m2)*(y1 - m2) + (y2 - m2)*(y2 - m2) + ...... (yn - m2)*(yn - m2)</p>
+<p>Coefficient of correlation = P / sqrt(F * G)</p>
+<p>A related concept with coefficient of correlation is, equation of a 
+regression line. There is a type of regression line (a straight line on an x-y 
+axis) termed as "least-squares regression line", whose equation is defined as 
+follows:</p>
+<p>y = a + bx</p>
+<p>where b = r * (Sy/Sx)</p>
+<p>a = Ym - b*Xm</p>
+<p>Where r = coefficient of correlation, Sx = standard deviation of X values, Sy 
+= standard deviation of Y values, Xm = arithmetic mean of X values, Ym = 
+arithmetic mean of Y values.</p>
+<p>&nbsp;</p>
+<p>
+<a href="help2.html">
+<img height="64" longdesc="1449486776_navigation-left-button_blue.png" src="1449486776_navigation-left-button_blue.png" width="64" class="auto-style3" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/wsText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+            "/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You can input a number in edit box below, and can then click 'NEXT' any number of times to input more numbers. Click 'FIND' button to get the result."
+        android:textColor="#0000ff"/>
+    <TextView
+        android:id="@+id/wsText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+            "/>
+    <TextView
+        android:id="@+id/enterNoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter number"
+        android:textColor="#eb7600"/>
+
+    <EditText
+        android:id="@+id/inpNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="55sp"/>
+    <TextView
+        android:id="@+id/wsText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+            "/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="nextBtnAction"
+            android:text="Next"
+            android:textColor="#eb7600"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/finishBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="findBtnAction"
+            android:text="Find"
+            android:textColor="#eb7600"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/showAllBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showAllBtnAction"
+            android:text="Show all"
+            android:textColor="#eb7600"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="resetBtnAction"
+            android:text="Reset"
+            android:textColor="#eb7600"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

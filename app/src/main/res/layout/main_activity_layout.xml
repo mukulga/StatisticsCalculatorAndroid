@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/welcomeMesgTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="
+
+
+
+                Welcome to the Hello Stats calculator. Click on one of the functionalities below.
+
+                " android:textColor="#0000ff"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/wsText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="                              "/>
+        <Button
+            android:id="@+id/calcBtn1"
+            android:text="Mean / Median / Mode / Avg Deviation / Std Deviation"
+            android:textColor="#eb7600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textAlignment="center" />
+        <TextView
+            android:id="@+id/wsText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="
+            "/>
+        <Button
+            android:id="@+id/calcBtn2"
+            android:text="Correlation and regression"
+            android:textColor="#eb7600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textAlignment="center" />
+        <TextView
+            android:id="@+id/description4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="\n\nIf you experience any difficulties using this App, you may check this App's page on Play Store for the known issues and workarounds."
+            android:textColor="#003300" />
+
+    </LinearLayout>
+
+</LinearLayout>

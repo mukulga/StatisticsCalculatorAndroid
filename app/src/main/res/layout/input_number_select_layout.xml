@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/wsText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+            "/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This screen allows you to calculate mean, median, mode, average deviation and standard deviation.\n"
+        android:textColor="#0000ff"/>
+
+    <TextView
+        android:id="@+id/textInputMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How do you want to input data for these calculations? Select from one of the options mentioned below. Click on OK, when you are ready.\n"
+        android:textColor="#0000ff"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_one_at_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_one_at_a_time"
+            android:textColor="#eb7600"
+            android:checked="true"/>
+        <RadioButton android:id="@+id/radio_from_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_file_selection"
+            android:textColor="#eb7600"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/wsText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n"/>
+    <Button
+        android:id="@+id/showAllBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openRadioButtonInputScreen"
+        android:text="Ok"
+        android:textColor="#eb7600"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/wsText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+
+            "/>
+    <TextView
+        android:id="@+id/inpMethodSelectLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="#003300"
+        android:text="\nTo learn more about these data input methods, click the below text:\n"/>
+    <TextView
+        android:id="@+id/inpMethodsHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="#96eb7600"
+        android:text="Data input methods"/>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Statistics Calculator</string>
+    <string name="title_activity_main_stats_calc">Statistical Calculator</string>
+    <string name="title_activity_stats_preference">Application Preferences</string>
+    <string name="title_file_selection_activity">Open file browser below</string>
+    <string name="share">Share</string>
+    <string name="preference">Settings</string>
+    <string name="prevResults">Previous Results</string>
+    <string name="clrPrevResults">Clear Previous Results</string>
+    <string name="about_dialog">About</string>
+    <string name="title_activity_htmlView">App Information</string>
+    <string name="help">Help</string>
+    <string name="tAndC">T&amp;C</string>
+    <string name="feedback">Feedback</string>
+    <string name="radio_one_at_a_time">One number at a time, using the device keyboard</string>
+    <string name="radio_file_selection">Select a text file from the device file system</string>
+    <string name="moreInfoText"><a href="moreinfo.html">More information about these options</a></string>
+</resources>

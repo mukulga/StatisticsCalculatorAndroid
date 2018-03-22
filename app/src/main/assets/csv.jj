@@ -1,0 +1,76 @@
+options {
+  STATIC = false;
+}
+
+PARSER_BEGIN(CSVParser)
+
+/** CSV file parser. */
+public class CSVParser {
+
+  /** Main entry point. */
+  public static void main(String args[]) throws ParseException {
+    CSVParser parser = new CSVParser(System.in);
+    parser.Input();
+  }
+
+}
+
+PARSER_END(CSVParser)
+
+SKIP :
+{
+  " "
+| "\t"
+| "\n"
+| "\r"
+}
+
+TOKEN :
+{
+  < NUMBER:  ( ( ["0"-"9"] )* ["."] ( ["0"-"9"] )+ | 
+             ( ["0"-"9"] )+ ["."] ) |
+             ( ["0"-"9"] )+
+  >
+}
+
+/** Root production. */
+java.util.List<Float> Input() :
+{
+   java.util.List<Float> valList;
+}
+{
+   valList = ValueList() <EOF>
+   { return valList; }
+}
+
+/** another production. */
+java.util.List<Float> ValueList() :
+{
+   java.util.List<Float> valList = new java.util.ArrayList<Float>();
+   String num;
+}
+{
+   num = Number()
+   {
+      valList.add(Float.valueOf(num));
+   }   
+   ("," num = Number()
+     {
+        valList.add(Float.valueOf(num));
+     }
+   )*
+   
+   { return valList; }
+}
+
+/** another production. */
+String Number() :
+{
+   Token t;
+}
+{
+  t=<NUMBER>
+  {
+     return t.image;
+  }
+}

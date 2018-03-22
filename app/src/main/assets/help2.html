@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Hello Stats App Help</title>
+<style type="text/css">
+.auto-style2 {
+	margin-left: 40px;
+}
+.auto-style3 {
+	margin-left: 680px;
+	text-align: left;
+}
+.auto-style4 {
+	border-width: 0px;
+}
+.auto-style5 {
+	text-align: center;
+}
+.auto-style6 {
+	margin-left: 40px;
+	text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<p><u class="auto-style4">Hello Stats App, Help Version 3.1</u></p>
+<ul>
+	<li><strong>App Navigation</strong></li>
+</ul>
+
+<p class="auto-style2">This section 
+describes, how to reach to important functionalities present within the App and 
+how to use them. Certain features, which are obvious to understand by simply 
+looking at the UI are not described here.</p>
+<p class="auto-style2"><em>Application Settings:</em></p>
+<p class="auto-style2">The following screen illustrations from the App, show how 
+application settings are specified.</p>
+<p class="auto-style2"><img height="272" src="settings_icon.jpg" width="413" /></p>
+<p class="auto-style2"><img height="248" src="app_settings1.jpg" width="388" /></p>
+<p class="auto-style2">The following screen appears and allows the user to input 
+an email address, when the "Email address" application settings is clicked.</p>
+<p class="auto-style2"><img height="463" src="app_settings2.jpg" width="395" /></p>
+<p class="auto-style2">&nbsp;</p>
+<p class="auto-style2"><em>Previous Results:</em></p>
+<p class="auto-style2">The following screen illustrations from the App, show how 
+the user can work with the previously stored results.</p>
+<p class="auto-style2"><img height="116" src="prev_results1.jpg" width="408" /></p>
+<p class="auto-style2"><img height="266" src="prev_results2.jpg" width="406" /></p>
+<p class="auto-style2"><img height="165" src="prev_results3.jpg" width="409" /></p>
+<p class="auto-style2">If there are no previous results available in the App, 
+both the "Clear Previous" and the "send email icon" are disabled as shown in the 
+picture above.</p>
+<p class="auto-style2">When at least one previous result is available in the 
+App, the user would see a screen something like below.</p>
+<p class="auto-style2"><img height="257" src="prev_results4.jpg" width="392" /></p>
+<p class="auto-style2">When the user clicks on any calculation in the previous 
+results list, the calculation's full details are displayed to the user as shown 
+in the picture below.</p>
+<p class="auto-style2"><img height="470" src="prev_results5.jpg" width="416" /></p>
+<p class="auto-style2">&nbsp;</p>
+<p class="auto-style2"><em><a name="modeOfInput">The mode of data input, for calculating mean / 
+median / mode / avg deviation / std deviation / coeff of skewness:</a></em></p>
+<p class="auto-style2">For these statistical calculations, two modes (i.e how 
+the user can provide data input to the application) of data input are provided 
+to user as shown in the picture below from the app.</p>
+<p class="auto-style2">
+<img height="162" src="data_input_mode.jpg" width="327" /></p>
+<p class="auto-style2">a) The 1st option can be used to input data from the 
+Android device keyboard. It is suitable when, the number of values to which 
+statistical calculations need to be done are less.</p>
+<p class="auto-style2">b) The 2nd option allows the user to input data using a 
+text file (in an encoding like utf-8 or ascii) from the Android device file 
+system. At present, the files stored on external SD cards are not supported, and 
+the file needs to be kept on the Android device's native file system. On some 
+Android devices, the files kept on an SD card may be usable by this feature, but 
+this has not been tested and is unsupported. The data in text file for this 
+purpose, needs to have numeric values mentioned as comma-separated in a simple 
+linear fashion. An example of this kind of data input in the file would be: 
+2,3.5,82,100,50. This option is provided to allow the users, to conveniently 
+provide relatively large amounts of data to the app, that is otherwise difficult 
+to do so from an Android device keyboard. The text files used by this app, for 
+example may be created in a text edior for Android devices. They may also be 
+created on conventional devices like laptops or desktops, and then copied to 
+Android devices. </p>
+<p class="auto-style2"><em>Similarly, for the Coefficient of Correlation 
+calculations input data can be provided from the Android device keyboard or via 
+a file. The following picture from the app illustrates this.</em></p>
+<p class="auto-style2">
+<img height="377" src="data_input_mode2.jpg" width="383" /></p>
+<p class="auto-style2">The text file for this purpose, need to be formatted as 
+(a1,b1)(a2,b2)(a3,b3)...(). Where, a1, b1 etc are numeric values. In this 
+example, a1 &amp; b1 are values of two variables specified for one entity, a2 &amp; b2 are values for the same two variables for another 
+entity and so on. Arbitrary whitespace characters are accepted in the file, 
+other than where numbers are specified.</p>
+<p class="auto-style6">Note about the reading from files:</p>
+<p class="auto-style2">The input information can be multi-line in the file 
+(which can be convenient for large set of numbers), along with a simple case for 
+the input to be on one line.</p>
+<p class="auto-style2">Arbitrary whitespace characters (i.e " ", \n, \r, \t) are 
+optionally accepted in the input file (e.g between comma and a digit, before the 
+first visible character in the file, after the last visible character in the 
+file, between '(' and a number etc), which will be discarded before the App does calculations on the input.</p>
+<p class="auto-style2"><em>Sending Email:</em></p>
+<p class="auto-style2">The user can ask the App to send an email to a specified 
+address (specified in Application settings), containing the list of calculations 
+stored within the App. The following screen shows, how to request the App to 
+send this email.</p>
+<p class="auto-style2"><img height="252" src="email_icon.jpg" width="405" /></p>
+<p class="auto-style2">The App will automatically compose an email, prepare an 
+attachment with the details and sends the email to the user.</p>
+<table align="left" style="width: 100%">
+	<tr>
+		<td><a href="help1.html">
+		<img class="auto-style4" height="64" src="1449486776_navigation-left-button_blue.png" width="64" /></a></td>
+		<td class="auto-style5">
+		<a href="statistics_fundamentals.html">
+		<img height="64" longdesc="1449486796_navigation-right-button_blue.png" src="1449486796_navigation-right-button_blue.png" width="64" class="auto-style4" /></a></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+<p class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p class="auto-style2">&nbsp;</p>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General Configurations">
+        <CheckBoxPreference
+            android:key="PERSIST_PREF"
+            android:defaultValue="false"
+            android:title="Enable persistence"
+            android:summary="Click to enable / disable permanent storage of calculations on your device" />
+        <EditTextPreference
+            android:key="EMAIL_PREF"
+            android:title="Email address"
+            android:summary="Click to provide / change your email address registered with the App. The App can email calculations to this address as a text file attachment." />
+        <CheckBoxPreference
+            android:key="FILEINPUT_PREF"
+            android:defaultValue="false"
+            android:title="File input preference"
+            android:summary="Set file input as your preferred method, for providing data to app (checking this will reset the UI at appropriate places, where file input can be provided)" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Statistical Configurations">
+        <CheckBoxPreference
+            android:key="SD_DENOMINATOR_PREF"
+            android:defaultValue="false"
+            android:title="SD data set size"
+            android:summary="Select this option, to use size of data set as n-1 instead of n for calculating standard deviation (SD) / variance. The default is n, the total number of values. This also affects coefficient of skewness." />
+        <ListPreference
+            android:key="RESULT_ROUNDING_PREF"
+            android:title="Result precision"
+            android:summary="Specify up to how many decimal places you wish to round off statistical result values. If unselected, default precision will be used."
+            android:entries="@array/float_rounding_entries"
+            android:entryValues="@array/float_rounding_values" />
+        <CheckBoxPreference
+            android:key="REGRESSION_PREF"
+            android:defaultValue="false"
+            android:title="Regression equation"
+            android:summary="Display the equation of least-squares regression line, when calculating coefficient of correlation" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="UI Configurations">
+        <ListPreference
+            android:key="EDITBOX_SIZE_PREF"
+            android:title="Display size for input text boxes"
+            android:summary="Select the preferred display size for input text boxes, when entering data. If unselected, default size will be used."
+            android:entries="@array/editBox_entries"
+            android:entryValues="@array/editBox_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

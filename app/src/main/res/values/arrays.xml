@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="float_rounding_entries">
+        <item>5 decimal places</item>
+        <item>4 decimal places</item>
+        <item>3 decimal places</item>
+        <item>2 decimal places</item>
+        <item>1 decimal place</item>
+        <item>Default precision</item>
+    </string-array>
+    <string-array name="float_rounding_values">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="editBox_entries">
+        <item>Small (default)</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="editBox_values">
+        <item>S</item> <!-- small -->
+        <item>M</item> <!-- medium -->
+        <item>L</item> <!-- large -->
+    </string-array>
+</resources>
