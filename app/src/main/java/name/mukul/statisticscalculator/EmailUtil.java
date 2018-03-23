@@ -18,8 +18,8 @@ import javax.mail.internet.MimeMultipart;
 public class EmailUtil {
 
     public static boolean sendEmail(String emailFrom, String emailTo, String filePath) {
-        final String username = "mukulga";
-        final String password = "Mukul123";
+        final String username = "#####";
+        final String password = "#####";
 
         String host = "smtp.sendgrid.net";
 
